@@ -1,0 +1,55 @@
+* {
+    margin: 0;
+    padding: 0;
+
+}
+body {
+    overflow: hidden;
+    background: linear-gradient(to top, #001d3d, #003566);
+}
+.sky {
+    width: 100vw;
+    height: 100vh;
+    background: linear-gradient(to top, #001d3d, #003566);
+    position: relative;
+    animation: changeSky 10s linear infinite alternate;
+}
+.sun {
+    width: 100px;
+    height: 100px;
+    background: radial-gradient(circle, #ffcc00, #ff9900);
+    border-radius: 50%;
+    position: absolute;
+    bottom: -100px;
+    left: 50%;
+    transform: translateX(-50%);
+    animation: rise 10s linear infinite alternate;
+}
+@keyframes rise {
+0%{
+    bottom: -100%;
+}
+50% {
+    bottom: 50%;
+}
+100% {
+    bottom: 100%;
+}
+}
+@keyframes changeSky {
+    0% {
+        background: linear-gradient(to top, #001d3d, #003566);
+    }
+    25% {
+        background: linear-gradient(to top, #003566, #6baed6);
+    }
+    50% {
+        background: linear-gradient(to top, #6baed6, #add8e6);
+    }
+    75% {
+        background: linear-gradient(to top, #add8e6, #87ceeb) ;
+    }
+    100% {
+        background: linear-gradient(to top, #87ceeb, #ffffff);
+    }
+}
