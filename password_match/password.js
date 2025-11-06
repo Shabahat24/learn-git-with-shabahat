@@ -1,0 +1,1 @@
+let signupf_form = document.getElementById("signUp") 

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="tictac.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="gameContainer">
+            <div class="titleSection">
+                <h1>Welcome to Tic Tac MyTicTacToe</h1>
+                <div class="game-turns-deatils-container">
+                    <span class="Turn-Detail">Turn for X</span>
+                    <button class="Reset">Reset</button>
+                </div>
+            </div>
+            <div class="actualGameContainer">
+                <div class="game-row">
+                    <div class="box box-left border-top" ></div>
+                    <div class="box border-top"></div>
+                    <div class="box box-right border-top"></div>
+                </div>
+                <div class="game-row">
+                    <div class="box box-left" ></div>
+                    <div class="box"></div>
+                    <div class="box box-right"></div>
+                </div>
+                <div class="game-row">
+                    <div class="box box-left border-bottom" ></div>
+                    <div class="box border-bottom"></div>
+                    <div class="box box-right border-bottom"></div>
+                </div>
+            </div>
+    </div>
+    <div class="modal">
+        <div class="modalContent">
+            <h2 class="winMessageContent">Player X wins!🎉</h2>
+            <button class="playAgain">Play Again</button>
+        </div>
+    </div>
+    <script src="tictac.js"></script>
+</body>
+</html>
